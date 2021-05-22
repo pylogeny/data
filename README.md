@@ -1,2 +1,1 @@
-# tests
-Test data and test facilities for pylogeny packages
+# Data Samples and Data Handling Routines for Pylogeny Packages
