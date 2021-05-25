@@ -27,5 +27,6 @@ SAMPLES = {
             "characters": ["a", "b", "c"],
             "taxa": ["A", "B", "C", "D", "E", "F", "G", "H"]
             },
-        "wichmannmixezoquean.tree": "(((ChiapasZoque,(SanMiguelChimalapaZoque,SantaMariaChimalapaZoque)),(SoteapanZoque,TexistepecZoque)),(OlutaPopoluca,(SayulaPopoluca,(NorthHighlandMixe,(LowlandMixe,SouthHighlandMixe)))));"
+        "wichmannmixezoquean.tree": "(((ChiapasZoque,(SanMiguelChimalapaZoque,SantaMariaChimalapaZoque)),(SoteapanZoque,TexistepecZoque)),(OlutaPopoluca,(SayulaPopoluca,(NorthHighlandMixe,(LowlandMixe,SouthHighlandMixe)))));",
+        "wichmannmixezoquean-nj.tree": "(((((LowlandMixe:0.22,SouthHighlandMixe:0.21):0.050,NorthHighlandMixe:0.23):0.050,SayulaPopoluca:0.27):0.030,OlutaPopoluca:0.30):0.052,((ChiapasZoque:0.24,(SanMiguelChimalapaZoque:0.23,SantaMariaChimalapaZoque:0.20):0.050):0.020,(SoteapanZoque:0.22,TexistepecZoque:0.32):0.060):0.078);"
         }
