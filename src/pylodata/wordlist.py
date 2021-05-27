@@ -44,7 +44,7 @@ def get_multistate_patterns(wordlist, ref="cogid", missing="Ø"):
         patterns[concept][doculect] += [str(cogid)]
         characters[str(cogid)] += 1
     for concept in patterns:
-        for doculect in patterns[concept]:
+        for doculect in wordlist.cols:
             if not patterns[concept][doculect]:
                 patterns[concept][doculect] = [missing]
     return patterns, sorted(characters, key=lambda x: characters[x],
