@@ -32,12 +32,10 @@ setup(
         'dev': ["pep8", 'wheel', 'twine'],
         'test': [
             'pytest>=4.3',
+            "lingpy",
             'pytest-cov',
             'coverage>=4.2',
         ],
-    },
-    entry_points={
-        'console_scripts': []
     },
 )
 
