@@ -1,6 +1,6 @@
 from pathlib import Path
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 
 def data_path(*combs):
@@ -57,5 +57,13 @@ SAMPLES = {
         "characters": ["a", "b", "c"],
         "tree": "((((A:1,B:1):0.5,C:1.5):1.0,(D:0.5,E:0.5):2),F:2.5);",
         "taxa": ["A", "B", "C", "D", "E", "F"],
+    },
+    "ex4": {
+        "matrix": [[-2, 1, 1], [1, -2, 1], [1, 1, -2]],
+        "pattern": {"A": ["a"], "B": ["b"], "C": ["c"], "D": ["d"]},
+        "characters": ["a", "b", "c", "d"],
+        "tree": "(((A:1,B:1):1,C:1):1,D:1);",
+        "taxa": ["A", "B", "C", "D"],
+        "pi": [0.25, 0.25, 0.25, 0.25],
     },
 }

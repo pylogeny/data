@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pylodata',
-    version='0.1.0',
+    version='0.2.0',
     license='MIT',
     description='Python Package for Phylogenetic Reconstruction in Linguistics',
     long_description=open('README.md').read(),
@@ -17,9 +17,9 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    author='Johann-Mattis List and Taraka Rama',
+    author='Johann-Mattis List and Taraka Rama and Wesley Scivetti',
     author_email='mattis_list@eva.mpg.de',
-    url='https://github.com/pylotests/parsimony',
+    url='https://github.com/pylogeny/data',
     keywords='data',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
