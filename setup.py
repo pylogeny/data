@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pylodata',
-    version='0.2.0',
+    version='0.3.0.dev0',
     license='MIT',
     description='Python Package for Phylogenetic Reconstruction in Linguistics',
     long_description=open('README.md').read(),
