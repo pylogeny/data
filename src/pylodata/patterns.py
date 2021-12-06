@@ -4,6 +4,7 @@ Methods for loading correspondence patterns.
 import codecs
 from collections import defaultdict
 
+
 def get_correspondence_patterns(path, positions=None, threshold=5):
     """
     Load correspondence pattern data.
@@ -17,21 +18,20 @@ def get_correspondence_patterns(path, positions=None, threshold=5):
     characters = defaultdict(int)
     for row in data[1:]:
         if row[1] in positions and int(row[2]) >= threshold:
-            patterns[row[0]] = dict(zip(
-                        doculects, row[3:-2]))
+            patterns[row[0]] = dict(zip(doculects, row[3:-2]))
             for char in row[3:-2]:
                 characters[char] += 1
     characters = sorted(characters, key=lambda x: characters[x], reverse=True)
     return patterns, characters
-    
-        
-def get_binary_correspondence_patterns(path, positions=None, threshold=5,
-        missing="Ø"):
+
+
+def get_binary_correspondence_patterns(path, positions=None, threshold=5, missing="Ø"):
     """
     Load correspondence pattern data in binarized form.
     """
-    patterns, characters = get_correspondence_patterns(path,
-            positions=positions, threshold=threshold)
+    patterns, characters = get_correspondence_patterns(
+        path, positions=positions, threshold=threshold
+    )
     bpats = {}
 
     for key, pattern in patterns.items():
@@ -45,5 +45,5 @@ def get_binary_correspondence_patterns(path, positions=None, threshold=5,
                     new_pattern[doculect] = [missing]
                 else:
                     new_pattern[doculect] = ["0"]
-            bpats[key+'-'+char] = new_pattern
+            bpats[key + "-" + char] = new_pattern
     return bpats, ["1", "0", "Ø"]
